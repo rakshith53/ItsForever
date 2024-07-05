@@ -1,0 +1,19 @@
+.physical-albums {
+    text-align: center;
+    background-color: black;
+    min-height: 100vh; /* Ensures the albums container takes at least the full height of the viewport */
+    color: white; /* Ensures text is visible against the black background */
+}
+
+
+.heading {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+  
+.divider {
+    height: 2px;
+    background-color: #555; 
+    margin: 20px 0; 
+}

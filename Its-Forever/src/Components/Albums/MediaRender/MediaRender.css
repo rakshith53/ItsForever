@@ -1,0 +1,63 @@
+.album-content {
+    padding: 20px;
+}
+
+.media-half {
+    display: flex;
+    align-items: center;
+    height: 250px; /* Set a fixed height for each row */
+}
+
+.media-row {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Add more gap between rows */
+    margin-bottom: 20px; /* Increase margin to add more space between rows */
+}
+
+.media-row-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Add more gap between rows */
+}
+
+.media-half video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.media-half.images-right,
+.media-half.images-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.media-half.images-right img,
+.media-half.images-left img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    margin: 1%; 
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+.media-quarter {
+    width: 100%;
+    height: 250px; 
+    position: relative;
+}
+
+.media-image-quarter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+

@@ -1,0 +1,79 @@
+.page-one-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page-one-container::after {
+    content: '';
+    position: absolute;
+    top: 20px; /* Adjusted for more space at the top */
+    left: 20px;
+    right: 20px;
+    bottom: 30px; /* Adjusted for more space at the bottom */
+    border: 3px solid #fff;
+    pointer-events: none;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+.page-one-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.page-one-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+
+.page-one-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjusts content distribution */
+    align-items: center; /* Centers horizontally */
+    position: absolute;
+    top: 30px; /* Aligns with border edge */
+    left: 20px;
+    right: 20px;
+    bottom: 30px; /* Aligns with border edge */
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65);
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.page-one-title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.65);
+    font-family: 'Forte';
+    font-size: 48px; 
+}
+
+.page-one-date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.65);
+    font-family: 'forte';
+    font-size: 28px; 
+}
+
+.page-one-photographer {
+    font-size: 18px;
+    margin-top: auto; /* Ensures it stays at the bottom */
+}

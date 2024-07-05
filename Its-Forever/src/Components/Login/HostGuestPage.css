@@ -1,0 +1,126 @@
+.login-container {
+    display: flex;
+    min-height: 100vh; 
+}
+
+.login-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.login-logo {
+    width: 500px; 
+    margin-top: -200px;  /* Adjust the top margin to fit the logo correctly */
+}
+
+form {
+    width: 100%;  
+    max-width: 500px;  /* Limit the form width on larger screens */
+    text-align: center;
+    margin-top: 50px;  /* Space above the form */
+}
+
+.login-form-container h2 {
+    margin-bottom: 0;
+}
+
+.login-form-container p {
+    color: #706F6C; /* Dark gray color for the paragraph text */
+    margin-top: 5px;
+}
+
+.vertical-btn-group {
+    width: 100%;  /* Button group takes full width of the form */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+}
+
+.vertical-btn-group .btn {
+    width: 80%;  /* Buttons occupy 80% of their container width */
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;  
+    border-radius: 5px;
+    border: 2px solid transparent; /* Default border to maintain layout */
+    border-radius: 10px;
+}
+
+.input-group {
+    width: 100%;  /* Button group takes full width of the form */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+}
+
+.input-group .form-input{
+    width: 71%;  /* Button group takes full width of the form */
+    height: 20px;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 10px;  
+    border-radius: 10px;
+    border: 2px solid #706F6C; 
+    background-color: black;
+    color: #706F6C;
+    outline: none;
+}
+
+.btn-host,
+.btn-guest {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px; 
+    width: 100%; /* Ensure buttons take full width */
+    border: 2px solid transparent; /* Default border to prevent layout shift */
+}
+
+
+
+.btn-host.active,
+.btn-guest.active {
+    background-color: #F6C67C; /* Active color fill */
+    color: black; /* Text color for visibility */
+    border-color: #F6C67C; /* Same as background */
+}
+
+.btn-host.inactive,
+.btn-guest.inactive {
+    background-color: transparent; /* No fill for inactive */
+    color: white; /* Text color for visibility */
+    border-color: #F6C67C; /* Outline color for inactive */
+}
+
+.form-input.active {
+    border-color: #F6C67C; /* Change border color when active or focused */
+}
+
+/* Ensure no traces of previous border when inactive */
+.form-input.inactive {
+    border-color: #706F6C; /* Maintain consistent inactive border color */
+}
+
+.btn-confirm.active {
+    border-color: #F6C67C; /* Active border and background color */
+    background-color: #F6C67C;
+    color: black;
+}
+
+.btn-confirm.inactive {
+    border-color: #706F6C; /* Inactive border color */
+    background-color: #706F6C;
+    color: black;
+}

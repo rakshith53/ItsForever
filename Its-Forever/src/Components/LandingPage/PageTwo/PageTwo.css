@@ -1,0 +1,47 @@
+.page-two-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000; /* Consistent black background */
+    color: white;
+    padding: 0px; /* Remove any padding that might affect the alignment */
+}
+
+.page-two-content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.image-container {
+    flex: 1;
+    padding: 25px; /* Remove padding for a more streamlined look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-second {
+    object-fit: cover; /* Changed to cover to ensure images fit well */
+    width: 100%;
+    height: 65vh;
+    border-radius: 20px; /* Keep rounded corners for aesthetics */
+}
+
+.description-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.description-heading {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
